@@ -1,0 +1,87 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, intial-scale">
+<title>my 3th web page </title>
+<link rel="stylesheet"  href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+<nav>
+<a href="index.html"></a>
+<div class="nav-link" id="navlink">
+<i class="fa fa-times" onclick="hideMenu()"></i>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="Offers.html">OFFERS</a></li>
+<li><a href="blog.html">BLOG</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<h1>Contact Us</h1>
+
+</section>
+<!--------contact us--------->
+<section class="location">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d896389.6398288388!2d77.093231!3d28.644084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1699544769428!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<div class="contact-col">
+<form action="form handler.php" method="post">
+<input type="text" name="name" placeholder="Enter your Name" required>
+<input type="email" name="email" placeholder="Enter your Email Address" required>
+<input type="text"  name="subject"placeholder="Enter your Subject" required>
+<textarea rows="8" name="message" placeholder="Message" required></textarea><br>
+<button type="submit" class="hero-btn red-btn">Send Message</button>
+</form>
+</div>
+<section class="contact-us">
+<div class="row">
+<div class="contact-col">
+<div>
+<img src="home.png">
+<span><h5>XYX road, ABC Building </h5>
+<p>Uttar Pradesh, Aligarh</p></span></div>
+</div>
+<div class="contact-col">
+<div>
+<img src="phone.png">
+<span><h5>+10990213092 </h5>
+<p>Monday to saturday,10Am to 6PM</p></span></div>
+</div>
+<div class="contact-col">
+<div>
+<img src="envelope.png">
+<span><h5>akwebarena@gmail.com</h5>
+<p>Email us your query</p></span></div>
+</div>
+</section>
+<!-------footer------>
+<section class="footer"><br>
+<h1>About Us</h1>
+<p>. You can also format text directly by using the other controls on the Home tab. 
+Most controls offer a choice of using the look from the current theme or using a format 
+that you specify directly.<br>To change the overall look of your document, choose new Theme 
+elements on the Page Layout tab. </p>
+<div class="icon">
+<img src="fb.png">&nbsp;<img src="ig.png">&nbsp;<img src="tw.png">&nbsp;<img src="info.png">
+</div>
+<p>Made by Ayush kumar<img src="star (1).png"> in &copy; 2020 Webpage </p>
+</div>
+
+<!--------JavaScript for Toggle Menu------>
+<script>
+  var navlink = document.getElementById("navlink");
+   function showMenu(){
+      navlink.style.right = "0";    
+  }
+    function hideMenu(){
+      navlink.style.right  = "-200px";    
+  }
+</script>
+
+</body>
+</html>
